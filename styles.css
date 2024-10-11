@@ -1,0 +1,114 @@
+/* Import Google Fonts for styling */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto:wght@400;700&display=swap');
+
+/* Basic styles for the body */
+body {
+    font-family: 'Roboto', sans-serif; /* Font for body text */
+    margin: 0; /* Remove default margin from the body */
+    padding: 0; /* Remove default padding from the body */
+    background-color: #101820; /* Deep blue background for the entire page */
+    color: #e0e0e0; /* Light gray text color for better readability */
+}
+
+/* Styles for the header */
+header {
+    font-family: 'Roboto', sans-serif; /* Font for header text */
+    background-color: #003366; /* Dark blue background for the header */
+    color: #ffffff; /* White text color in the header */
+    padding: 20px 0; /* Padding above and below the header content */
+    text-align: center; /* Center-align all text within the header */
+}
+
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding from the list */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline (horizontally) */
+    margin: 0 15px; /* Margin between navigation items */
+}
+
+/* Styles for navigation links */
+nav ul li a {
+    color: #00ccff; /* Bright blue color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover for visual feedback */
+}
+
+/* Main content area styles */
+main {
+    padding: 20px; /* Padding around main content */
+}
+
+/* Styles for individual sections */
+section {
+    margin-bottom: 40px; /* Space below each section for separation */
+}
+
+/* Heading styles for section titles */
+h2 {
+    font-family: 'Oswald', sans-serif; /* Font for section headings */
+    color: #00ccff; /* Bright blue color for headings */
+}
+
+/* Gallery grid layout styles */
+.gallery-grid {
+    display: grid; /* Use grid layout for the gallery section */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns in the grid */
+    gap: 10px; /* Space between grid items */
+}
+
+/* Styles for images in the gallery */
+.gallery-grid img {
+    width: 100%; /* Make images take the full width of their grid cells */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Styles for the contact form */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+/* Styles for form labels */
+form label {
+    margin-top: 10px; /* Space above each label for better readability */
+}
+
+/* Styles for input fields and textareas */
+form input, form textarea {
+    padding: 10px; /* Padding inside input fields and textareas */
+    margin-top: 5px; /* Space above each input field */
+    border: 1px solid #00ccff; /* Bright blue border around input fields */
+    border-radius: 4px; /* Slightly rounded corners for input fields */
+    background-color: #1a1a1a; /* Dark background for input fields */
+    color: #e0e0e0; /* Light text color for input fields */
+    font-size: 1em; /* Font size for input fields */
+}
+
+/* Placeholder text styles for input fields and textareas */
+form input::placeholder, form textarea::placeholder {
+    color: #999; /* Gray color for placeholder text */
+}
+/* Styles for the submit button */
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #003366; /* Dark blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em; /* Font size for button */
+}
+
+form button:hover {
+    background-color: #00ccff; /* Bright blue on hover */
+}
